@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    druid:
+      name: master
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost/token_demo?useSSL=false&characterEncoding=utf8
+      post: 3306
+      username: root
+      password: root
+
+
+mybatis-plus:
+  type-aliases-package: com.example.token.enity
+  mapper-locations: classpath:**/mapper/*.xml
